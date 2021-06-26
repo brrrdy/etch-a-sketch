@@ -1,0 +1,29 @@
+body {
+    background-color: azure;
+}
+
+.etch-container {
+    border: 2px solid rgb(255, 0, 255);
+    min-width: 100px;
+    min-height: 100px;
+    margin: 24px auto;
+
+}
+
+.etch-square {
+    border: 2px solid blue;
+    width: 24px;
+    height: 24px;
+    line-height:24px;
+    text-align: center;
+    margin: 4px;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.etch-row {
+    border: 2px solid red;
+    margin: 4px;
+    display: flex;
+    flex-flow: row nowrap;
+}
