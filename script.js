@@ -153,7 +153,7 @@ function getRgb(rgbStr) {
 
 // Calculate and return size of each etch square (number) in pixels
 function calcSquareSideWidth(totalWidthPx, rowCount) {
-    let side = totalWidthPx / rowCount;
+    let side = (totalWidthPx) / rowCount;
     return side;
 }
 
