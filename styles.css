@@ -1,29 +1,57 @@
 body {
-    background-color: azure;
+    background-color: rgb(251,255,254);
+    font-family: sans-serif;
+}
+
+.page-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.button-reset {
+    color: whitesmoke;
+    background-color: rgb(84,94,117);
+    border:none;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 360px;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 12px;
+    transition: 0.5s ease-in-out;
+}
+
+.button-reset:hover {
+    background-color: rgb(48,77,109);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 .etch-container {
-    border: 2px solid rgb(255, 0, 255);
-    min-width: 100px;
-    min-height: 100px;
-    margin: 24px auto;
-
+    /* border: 2px solid rgb(255, 0, 255); */
+    height: auto;
 }
 
-.etch-square {
-    border: 2px solid blue;
-    width: 24px;
-    height: 24px;
-    line-height:24px;
-    text-align: center;
-    margin: 4px;
-    font-size: 12px;
-    flex-shrink: 0;
+.etch-grid {
+    border: 1px solid black;
+    background-color: whitesmoke;
 }
 
 .etch-row {
-    border: 2px solid red;
-    margin: 4px;
+    /*border: 2px solid red;*/
     display: flex;
     flex-flow: row nowrap;
 }
+
+.etch-square {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.etch-square.etched {
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in;
+}
+
